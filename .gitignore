@@ -19,3 +19,5 @@ __pycache__/
 
 # Root files
 /.coverage*
+/.python-version
+/.sourcery.yaml
