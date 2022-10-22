@@ -25,6 +25,9 @@ classifiers = [
 dependencies = []
 dynamic = ["version"]
 
+  [project.entry-points.hatch]
+  cextension = "hatch_cextensions.hooks"
+
   [project.urls]
   Documentation = "https://github.com/myusername/hatch-cextensions#readme"
   Source = "https://github.com/myusername/hatch-cextensions"
