@@ -1,0 +1,10 @@
+[flake8]
+select = B,B9,BLK,C,D,E,F,I,N,S,W
+ignore = D100,D200,E203,E501,W503
+max-line-length = 120
+max-complexity = 10
+docstring-convention = google
+ban-relative-imports = true
+per-file-ignores =
+    tests/*: I252,S101
+    tests/**/*: I252,S101
