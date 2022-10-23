@@ -41,6 +41,7 @@ path = "src/hatch_cextensions/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
+  "hatchling",
   "pytest",
   "pytest-cov",
   "pytest-xdist",
