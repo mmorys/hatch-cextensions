@@ -1,12 +1,12 @@
 import os
 import shutil
-import subprocess
+import subprocess  # noqa: S404
 import sys
 import uuid
 from contextlib import contextmanager
 from contextlib import suppress
 
-from hatchling.builders.hooks.plugin.interface import BuildHookInterface
+from hatchling.builders.hooks.plugin.interface import BuildHookInterface  # pyright: ignore[reportMissingImports]
 
 
 class PythonBuildExtensionError(Exception):
@@ -77,7 +77,7 @@ setup(
 
         with self._hide_project_file():
             with self._setup_py() as setup_file:
-                process = subprocess.run(
+                process = subprocess.run(  # noqa: S603
                     [sys.executable, setup_file, "build_ext", "--inplace"],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.STDOUT,

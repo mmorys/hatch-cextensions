@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-cextension"]
 build-backend = "hatchling.build"
 
 [project]
-name = "00-HelloWorld"
+name = "01-HeyMan"
 version = "1.0.0"
 
 [tools.hatch.build.hooks.cextension]

@@ -1,5 +1,6 @@
+# TODO: reintroduce select 'D'
 [flake8]
-select = B,B9,BLK,C,D,E,F,I,N,S,W
+select = B,B9,BLK,C,E,F,I,N,S,W
 ignore = D100,D200,E203,E501,W503
 max-line-length = 120
 max-complexity = 10
