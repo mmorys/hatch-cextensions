@@ -8,7 +8,7 @@ class TestProjectCreation:
         assert os.getcwd().startswith("/tmp")  # noqa: S108
 
     def test_tmp_proj_files_copied(self, project_path):
-        assert any(pth.name == "pyproject.toml" for pth in pathlib.Path(project_path).iterdir())
+        assert pathlib.Path(project_path).joinpath("pyproject.toml").exists()
 
     def test_tmp_proj_dir_created(self, project_path):
         project = pathlib.Path(project_path)
